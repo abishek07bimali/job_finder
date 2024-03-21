@@ -1,0 +1,120 @@
+/* secondnavigation.css */
+
+/* Common styles for both desktop and mobile */
+.secondary-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #F1F2F4;
+    color: #333;
+    padding: 10px 0;
+  }
+  
+  .secondary-navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    max-width: 1200px;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items:center;
+  }
+  
+  .logo {
+    width: 110px; /* Adjust the width of the logo image */
+    height: 40px; /* Adjust the height of the logo image */
+    margin-right: 20px;
+  }
+  
+  .search-section {
+    flex: 1;
+  }
+  
+  .search-div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  
+  .search-div i {
+    margin-right: 8px;
+  }
+  
+  .search-div input {
+    flex: 1;
+    border: none;
+    outline: none;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .signup-button,
+  .post-job-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;    
+    font-weight: 600;
+    width: 100px;
+
+  }
+  
+  .signup-button:hover,
+  .post-job-button:hover {
+    background-color: #45a049;
+  }
+  .notification-dropdown {
+    max-height: 20rem; 
+    overflow-y: auto; 
+    top: 8rem;
+  }
+
+  /* Media query for responsiveness */
+  @media (max-width: 800px) {
+    .secondary-navbar1 {
+      width: 90%;
+    }
+  
+    .search-section {
+        width: 50%;
+        margin:10px 10px 10px 10px;
+    }
+  
+    .right-section {
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 10px; /* Add some spacing between buttons on small screens */
+    }
+  
+    .signup-button,
+    .post-job-button {
+      margin-left: 0; /* Remove left margin on small screens */
+      margin-top: 5px; /* Add some spacing between buttons on small screens */
+    }
+  }
+  @media (max-width: 500px) {
+    .search-section {
+    display: none;    }
+    .right-section{
+        flex-direction: row;
+    }
+    .signup-button,
+    .post-job-button {
+      margin: 5px; 
+      width: max-content;
+      font-weight: 450;
+    }
+  
+  }
+  
